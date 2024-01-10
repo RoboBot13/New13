@@ -1,0 +1,21 @@
+#Basic boolean check for empty string with "or" statement which comes back as true
+#one item needs to be true while evaluating "or" statements
+string1 = "john"
+string2 = ""
+check = bool(string1 or string2)
+print(check)
+
+#An "or" statement evaluation or variable routing_protocol
+routing_protocol = "EIGRP"
+if routing_protocol == "ISIS" or routing_protocol == "OSPF":
+    print("This device is running link state protocol")
+else:
+    print("This device is not running a link state protocol")
+
+
+#The "if" line is essentially and or statement within the list provided to evaluate
+routing = "Netgear"
+if routing in ["BGP","OSPF","ISIS","RIP"]:
+    print("Yay you're supported!")
+else:
+    print("Sorry wrong routing protocol")
